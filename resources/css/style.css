@@ -28,6 +28,17 @@ section {
   padding: 1%;
 }
 
+.clearfix{
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.' ;
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /*------------------------------------*/
 /* HEADING */
 /*------------------------------------*/
@@ -223,4 +234,46 @@ padding: 0;
 .meals img:hover {
   transform: scale(1.05);
   opacity: 1;
+}
+/*------------------------------------*/
+/* HOW IT WORKS*/
+/*------------------------------------*/
+.section-steps {
+  background-color: #f4f4f4;
+}
+.steps-box{
+  margin-top: 70px;
+  text-align: left;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.app-screen{
+  width: 40%;
+  float: right;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step div{
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  display: inline-block;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px ;
 }
