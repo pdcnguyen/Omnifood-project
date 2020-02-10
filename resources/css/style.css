@@ -28,11 +28,11 @@ section {
   padding: 1%;
 }
 
-.clearfix{
+.clearfix {
   zoom: 1;
 }
 .clearfix:after {
-  content: '.' ;
+  content: ".";
   clear: both;
   display: block;
   height: 0;
@@ -40,8 +40,8 @@ section {
 }
 
 a:link,
-a:visited{
-  color:#e67e22;
+a:visited {
+  color: #e67e22;
   text-decoration: none;
   padding: 1px;
   border-bottom: 1px solid #e67e22;
@@ -49,7 +49,7 @@ a:visited{
 }
 
 a:hover,
-a:active{
+a:active {
   color: #555;
   border-bottom: 1px solid transparent;
 }
@@ -106,7 +106,7 @@ h3 {
   text-align: center;
 }
 
-.section-feature .long-copy{
+.section-feature .long-copy {
   margin-bottom: 20px;
 }
 
@@ -178,7 +178,8 @@ header {
 /* BUTTONS */
 /*------------------------------------*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -188,7 +189,8 @@ header {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #fff;
@@ -196,7 +198,9 @@ header {
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
   border: 1px solid #b86217;
   background-color: #b86217;
 }
@@ -217,8 +221,8 @@ header {
 /*------------------------------------*/
 /* MEALS*/
 /*------------------------------------*/
-.section-meals{
-padding: 0;
+.section-meals {
+  padding: 0;
 }
 
 .meals-showcase {
@@ -257,14 +261,14 @@ padding: 0;
 .section-steps {
   background-color: #f4f4f4;
 }
-.steps-box{
+.steps-box {
   margin-top: 70px;
   text-align: left;
   padding-right: 3%;
   padding-left: 3%;
 }
 
-.app-screen{
+.app-screen {
   width: 40%;
   float: right;
 }
@@ -273,7 +277,7 @@ padding: 0;
   margin-bottom: 50px;
 }
 
-.works-step div{
+.works-step div {
   color: #e67e22;
   border: 2px solid #e67e22;
   display: inline-block;
@@ -288,31 +292,30 @@ padding: 0;
 }
 
 .btn-app:link,
-.btn-app:visited{
+.btn-app:visited {
   border: 0px;
 }
-
 
 .btn-app img {
   height: 50px;
   width: auto;
-  margin-right: 10px ;
+  margin-right: 10px;
 }
 /*------------------------------------*/
 /*CITIES*/
 /*------------------------------------*/
 
-.box h3{
+.box h3 {
   text-align: left;
 }
 
-.box img{
+.box img {
   width: 100%;
   height: auto;
   margin-bottom: 15px;
 }
 
-.city-feature{
+.city-feature {
   margin-bottom: 5px;
 }
 
@@ -330,8 +333,9 @@ padding: 0;
 /*------------------------------------*/
 /*CUSTOMERS*/
 /*------------------------------------*/
-.section-testimonials{
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(img/back-customers.jpg);
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/back-customers.jpg);
   background-size: cover;
   color: #fff;
   background-attachment: fixed;
@@ -354,15 +358,13 @@ blockquote:before {
   left: -3px;
 }
 
-cite{
+cite {
   font-size: 90%;
   margin-top: 25px;
   display: block;
 }
 
-
-
-cite img{
+cite img {
   height: 40px;
   border-radius: 50%;
   vertical-align: middle;
@@ -376,7 +378,7 @@ cite img{
   background-color: #f4f4f4;
 }
 
-.plan-box{
+.plan-box {
   background-color: #fff;
   border-radius: 5px;
   width: 90%;
@@ -384,42 +386,72 @@ cite img{
   box-shadow: 4px 4px 4px #f1ccab;
 }
 
-.plan-box div{
+.plan-box div {
   padding: 15px;
   border-bottom: 1px solid #e8e8e8;
 }
 
-.plan-box div:last-child{
+.plan-box div:last-child {
   text-align: center;
   border: none;
 }
 
-.plan-box div:first-child{
+.plan-box div:first-child {
   background-color: #fcfcfc;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.plan-price{
+.plan-price {
   font-size: 300%;
   margin-bottom: 10px;
   font-weight: 100;
   color: #e67e22;
 }
 
-.plan-price span{
+.plan-price span {
   font-size: 30%;
   font-weight: 300;
 }
 
-.plan-price-meal{
+.plan-price-meal {
   font-size: 80%;
 }
 
-.plan-box ul{
+.plan-box ul {
   list-style: none;
 }
-.plan-box ul li i{
+.plan-box ul li i {
   font-size: 100%;
+}
 
+/*------------------------------------*/
+/*FORM*/
+/*------------------------------------*/
+
+.contact-form{
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea{
+  height: 400px;
+}
+
+input[type=checkbox]{
+  margin: 10px 5px 10px 0px;
+}
+
+*:focus{
+  outline: none;
 }
