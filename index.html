@@ -1,10 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
@@ -23,11 +29,16 @@
             alt="Omnifood logo"
             class="logo"
           />
+          <img
+            src="resources/img/logo.png"
+            alt="Omnifood logo"
+            class="logo-black"
+          />
           <ul class="main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#features">Food delivery</a></li>
+            <li><a href="#works">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#plans">Sign up</a></li>
           </ul>
         </div>
       </nav>
@@ -36,11 +47,11 @@
           Goodbye junk food.<br />
           Hello super healthy meals.
         </h1>
-        <a class="btn btn-full" href="#">I’m hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full js-scroll-to-plan" href="#">I’m hungry</a>
+        <a class="btn btn-ghost js-scroll-to-start" href="#">Show me more</a>
       </div>
     </header>
-    <section class="section-feature">
+    <section class="section-feature js-section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food</h2>
         <p class="long-copy">
@@ -134,7 +145,7 @@
         </li>
       </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="works">
       <div class="row">
         <h2>How it work &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -178,7 +189,7 @@
         </div>
       </div>
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row">
         <h2>Title: We're currently in these cities</h2>
       </div>
@@ -287,7 +298,7 @@
       </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans js-section-plan" id="plans">
       <div class="row">
         <h2>Start eating healthy today!</h2>
       </div>
@@ -489,20 +500,14 @@
         </p>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+
   </body>
 </html>
 
-<!--
-Section 8: Footer
-Title: None
-
-Navigation:
-1. About us
-2. Blog
-3. Press
-4. iOS App
-5. Android App
-
-Also include links to facebook, twitter, google+ and Instagram accounts.
-
--->
